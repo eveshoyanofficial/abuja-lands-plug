@@ -406,3 +406,399 @@ height:100%;
 border:0;
 
 }
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f7f9f7;
+color:#222;
+line-height:1.6;
+}
+
+
+.logo{
+font-size:20px;
+font-weight:bold;
+}
+
+nav a{
+color:#0f3d2e;
+text-decoration:none;
+margin-left:15px;
+font-size:14px;
+}
+
+nav a:hover{
+color:#9be3a5;
+}
+
+/* PROPERTY SECTION */
+
+.property-detail{
+padding:20px;
+max-width:1100px;
+margin:auto;
+}
+
+/* ESTATE IMAGE */
+
+.estate-image{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+/* ESTATE INFO */
+
+.estate-info{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+margin-bottom:20px;
+}
+
+.estate-info h2{
+color:#0f3d2e;
+margin-bottom:10px;
+}
+
+.estate-info p{
+margin-bottom:8px;
+}
+
+.estate-info ul{
+margin:10px 0 15px 20px;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+background:#1faa59;
+color:white;
+padding:12px 20px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#168f49;
+}
+
+/* MAP */
+
+.map-container{
+position:relative;
+width:100%;
+padding-bottom:56.25%;
+height:0;
+overflow:hidden;
+border-radius:10px;
+margin-top:20px;
+}
+
+.map-container iframe{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:0;
+}
+
+/* FLOATING WHATSAPP BUTTON */
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:26px;
+width:55px;
+height:55px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+box-shadow:0 6px 12px rgba(0,0,0,0.2);
+text-decoration:none;
+z-index:999;
+}
+
+.whatsapp-float:hover{
+background:#1ebe5d;
+}
+
+/* DESKTOP STYLES */
+
+@media (min-width:768px){
+
+.property-detail{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:start;
+}
+
+.estate-image{
+grid-column:1/3;
+height:400px;
+}
+
+.map-container{
+grid-column:1/3;
+}
+
+nav a{
+font-size:16px;
+}
+
+.logo{
+font-size:24px;
+}
+
+}
+
+/* GLOBAL */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f6f8f7;
+color:#222;
+line-height:1.5;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:14px 18px;
+background:white;
+color:#0e3b2c;
+flex-wrap:wrap;
+}
+header h3{
+color: orange;
+}
+
+.logo{
+font-size:20px;
+font-weight:700;
+}
+
+nav a{
+color: #0e3b2c ;
+text-decoration:none;
+margin-left:12px;
+font-size:14px;
+}
+
+nav a:hover{
+color:#7de39a;
+}
+
+/* PAGE SECTION */
+
+.properties{
+padding:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.properties h2{
+margin-bottom:20px;
+color:#0e3b2c;
+}
+
+/* MOBILE FIRST GRID */
+
+.property-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:18px;
+}
+
+/* CARD */
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* IMAGE */
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+/* CARD BODY */
+
+.card-body{
+padding:15px;
+}
+
+.card-body h3{
+font-size:18px;
+margin-bottom:6px;
+color:#0e3b2c;
+}
+
+.card-body p{
+font-size:14px;
+margin-bottom:12px;
+color:#555;
+}
+
+/* BUTTON */
+
+.card-body a{
+display:inline-block;
+background:#1faa59;
+color:white;
+padding:8px 14px;
+border-radius:5px;
+text-decoration:none;
+font-size:14px;
+font-weight:600;
+}
+
+.card-body a:hover{
+background:#168f49;
+}
+
+/* WHATSAPP FLOAT */
+
+.whatsapp-float{
+position:fixed;
+bottom:18px;
+right:18px;
+background:#25D366;
+color:white;
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:26px;
+box-shadow:0 5px 12px rgba(0,0,0,0.25);
+z-index:999;
+}
+
+.whatsapp-float:hover{
+background:#1ebe5d;
+}
+
+/* TABLET */
+
+@media (min-width:600px){
+
+.property-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* DESKTOP */
+
+@media (min-width:992px){
+
+.property-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+.card img{
+height:220px;
+}
+
+.logo{
+font-size:24px;
+}
+
+nav a{
+font-size:16px;
+}
+
+}
+
+/* LARGE DESKTOP */
+
+@media (min-width:1200px){
+
+.property-grid{
+grid-template-columns:repeat(4,1fr);
+}
+
+}
+
+.table-wrapper{
+width:100%;
+overflow-x:auto;
+margin-top:20px;
+}
+
+.plot-table{
+width:100%;
+border-collapse:collapse;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.plot-table th{
+background:#0f5132;
+color:white;
+padding:14px;
+text-align:left;
+font-size:15px;
+}
+
+.plot-table td{
+padding:14px;
+border-bottom:1px solid #eee;
+font-size:14px;
+}
+
+.plot-table tr:hover{
+background:#f5f9f7;
+}
+
+/* mobile optimisation */
+@media(max-width:768px){
+
+.plot-table th,
+.plot-table td{
+font-size:13px;
+padding:10px;
+}
+
+}
